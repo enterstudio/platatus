@@ -1,0 +1,36 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - oghliner > gulp-connect > send > debug:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp-connect > tiny-lr > body-parser > debug:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp-connect > tiny-lr > debug:
+        patched: '2018-06-08T08:24:34.226Z'
+  'npm:minimatch:20160620':
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-06-08T08:24:34.226Z'
+  'npm:ms:20170412':
+    - oghliner > gulp-connect > send > debug > ms:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp-connect > send > ms:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp-connect > tiny-lr > debug > ms:
+        patched: '2018-06-08T08:24:34.226Z'
+    - oghliner > gulp-connect > tiny-lr > body-parser > debug > ms:
+        patched: '2018-06-08T08:24:34.226Z'
