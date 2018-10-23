@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "babel-core": "^6.2.1",
-    "babel-eslint": "^4.1.6",
+    "babel-eslint": "^5.0.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-es2015-loose": "^7.0.0",
     "babel-preset-stage-0": "^6.1.18",
@@ -24,7 +24,7 @@
     "file-exists": "^1.0.0",
     "glob": "^6.0.1",
     "gray-matter": "^2.0.1",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^1.0.0",
     "gulp-if": "^2.0.0",
@@ -51,7 +51,8 @@
     "slug": "^0.9.1",
     "source-map-support": "^0.4.0",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "snyk": "^1.104.1"
   },
   "devDependencies": {
     "browser-sync": "^2.10.1",
@@ -64,7 +65,9 @@
     "server": "node server.js",
     "lint": "gulp lint",
     "start": "gulp watch",
-    "test": "npm run lint && npm run build && intern-client config=tests/config/intern-node && intern-runner config=tests/config/intern-browser"
+    "test": "npm run lint && npm run build && intern-client config=tests/config/intern-node && intern-runner config=tests/config/intern-browser",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -82,5 +85,6 @@
   "bugs": {
     "url": "https://github.com/mozilla/platatus/issues"
   },
-  "homepage": "https://github.com/mozilla/platatus#readme"
+  "homepage": "https://github.com/mozilla/platatus#readme",
+  "snyk": true
 }
